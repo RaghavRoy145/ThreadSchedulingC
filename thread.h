@@ -22,6 +22,7 @@ typedef enum state {
 typedef struct thread_t {
     ucontext_t uc;
     struct thread_t *next;
+    state thread_state;
     long int id;
     int running_time;
     int priority;
